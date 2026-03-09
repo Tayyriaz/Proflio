@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "AI Automation & Data Pipeline Engineer Portfolio",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "data-engineering",
+    "ai-automation"
+  ],
+  "author": "",
+  "license": "MIT"
+}
