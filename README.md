@@ -60,6 +60,56 @@ Modify CSS variables in `styles.css`:
 ### Add/Modify Projects
 Edit the projects section in `index.html` - duplicate a project card and modify the content.
 
+## Deployment to Vercel
+
+### Vercel Project Naming Requirements
+- Project names must be **lowercase**
+- Can include: letters, digits, `.`, `_`, `-`
+- Cannot contain the sequence `---`
+- Maximum 100 characters
+
+### Deployment Steps
+
+#### Method 1: GitHub Integration (Recommended)
+
+1. **Push to GitHub:**
+   ```bash
+   git add .
+   git commit -m "Portfolio website ready for deployment"
+   git remote add origin https://github.com/Tayyriaz/Proflio.git
+   git push -u origin main
+   ```
+
+2. **Deploy on Vercel:**
+   - Go to [vercel.com](https://vercel.com)
+   - Click "New Project"
+   - Import your GitHub repository `Tayyriaz/Proflio`
+   - Set project name (e.g., `portfolio-website` or `ai-data-engineer-portfolio`)
+   - Click "Deploy"
+   - Your site will be live in seconds!
+
+#### Method 2: Vercel CLI
+
+1. **Install Vercel CLI:**
+   ```bash
+   npm i -g vercel
+   ```
+
+2. **Deploy:**
+   ```bash
+   vercel
+   ```
+
+3. **Follow the prompts:**
+   - Login to Vercel
+   - Set project name (follow naming rules above)
+   - Deploy!
+
+### Important Notes
+- CSS and JS files use absolute paths (`/styles.css`, `/script.js`) for proper Vercel deployment
+- All static assets will be automatically served
+- The site will be available at `your-project-name.vercel.app`
+
 ## Browser Support
 
 - Chrome (latest)
